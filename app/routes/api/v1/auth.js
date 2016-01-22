@@ -1,6 +1,6 @@
 const express = require('express');
 
-const OAuth2Client = require('../../../auth/client');
+const OAuth2Client = require('../../../lib/auth');
 const client = new OAuth2Client();
 const router = express.Router();
 
