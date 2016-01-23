@@ -8,8 +8,16 @@
     "test": "mocha test",
     "develop": "node_modules/nodemon/bin/nodemon.js index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almapp/uc-email.git"
+  },
   "author": "Patricio López <patricio@lopezjuri.com> (https://lopezjuri.com)",
   "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/almapp/uc-email/issues"
+  },
+  "homepage": "https://github.com/almapp/uc-email#readme",
   "dependencies": {
     "batchelor": "^2.0.1",
     "bluebird": "^3.1.1",
