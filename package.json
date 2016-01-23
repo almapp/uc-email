@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "test": "mocha test",
     "develop": "node_modules/nodemon/bin/nodemon.js index.js"
   },
   "author": "Patricio López <patricio@lopezjuri.com> (https://lopezjuri.com)",
@@ -16,11 +17,15 @@
     "express": "^4.13.4",
     "google-auth-library": "^0.9.7",
     "googleapis": "^2.1.7",
+    "http-status-codes": "^1.0.5",
     "morgan": "^1.6.1",
     "nconf": "^0.8.2"
   },
   "devDependencies": {
-    "nodemon": "^1.8.1"
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "nodemon": "^1.8.1",
+    "supertest": "^1.1.0"
   },
   "keywords": [
     "uc",
