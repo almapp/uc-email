@@ -3,17 +3,15 @@
 const Promise = require('bluebird');
 const GoogleAuth = require('google-auth-library');
 
-const config = require('../config');
-
 module.exports = class OAuth2Client {
-  constructor() {
+  constructor(settings) {
     const auth = new GoogleAuth();
     this.client = module.exports = new auth.OAuth2(
-      config.get('gmail:client_id'),
-      config.get('gmail:secret'),
-      config.get('gmail:redirect_uri')
+      settings.client_id,
+      settings.secret,
+      settings.redirect_uri
     );
-    this.scopes = config.get('gmail:scopes');
+    this.scopes = settings.scopes;
   }
 
   get url() {
