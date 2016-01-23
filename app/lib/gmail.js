@@ -55,10 +55,7 @@ module.exports = class Gmail {
   }
 
   // https://developers.google.com/gmail/api/v1/reference/users/threads/list
-  threads(params, q) {
-    params = params || {};
-    if (q) params.q = querystring.stringify(q, ' ', ':'); //  For example, "from:someuser@example.com rfc822msgid: is:unread"
-
+  threads(params) {
     const reqs = {
       'method':'GET',
       'path':`/gmail/v1/users/me/threads?${querystring.stringify(params)}`,
